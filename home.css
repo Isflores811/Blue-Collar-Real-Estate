@@ -1,0 +1,1128 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Castoro&family=DM+Serif+Display&family=Ledger&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+  max-width: 1500px;
+}
+
+/*Navbar Section*/
+
+nav {
+  position: fixed;
+  z-index: 1;
+  border: 1px solid transparent;
+  background-color: rgb(170, 220, 247);
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+nav img {
+  width: 150px;
+  float: left;
+}
+
+nav .company {
+  float: left;
+}
+
+nav .title {
+  position: relative;
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  top: 20px;
+  font-family: "Castoro", serif;
+}
+
+nav .navbar-links {
+  float: right;
+  margin-right: 50px;
+  margin-top: 60px;
+}
+
+nav .navbar-selection {
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+}
+
+nav .drop-option {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  height: 25px;
+  text-align: center;
+  font-family: "Ledger", serif;
+}
+
+nav .drop-option:hover {
+  transition: 0.5s;
+  color: blue;
+  padding: 15px;
+}
+
+nav .dropdown {
+  padding-top: 0px;
+  background-color: rgb(204, 226, 255);
+  box-shadow: 0px 0px 10px -2px rgb(0, 0, 215);
+}
+
+.navbar-links .dropdown {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.navbar-links:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s all;
+  transform: translateY(0px);
+}
+
+/* */
+
+main {
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+}
+
+/*Company name and video*/
+
+#company-name {
+  position: relative;
+}
+#company-opener {
+  padding: 05px;
+}
+
+#company-video {
+  position: relative;
+  display: block;
+  z-index: -1;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  position: absolute;
+  font-size: 6vmin;
+  font-weight: bold;
+  color: rgb(253, 253, 253);
+  background-color: rgb(60, 138, 255);
+  top: 320px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: auto;
+  width: 70%;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px;
+  animation: fadeIn 3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.message {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  right: 0;
+  margin-left: 22%;
+  opacity: 0;
+  animation: message 5s 3s ease forwards;
+}
+
+@keyframes message {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.send-message {
+  position: relative;
+  border: 2px solid blue;
+  width: 60%;
+  height: 40px;
+  font-size: 16px;
+}
+
+.submit {
+  width: 10%;
+  font-weight: 700;
+  font-size: 20px;
+  height: 50px;
+  position: relative;
+}
+/* */
+
+/*Main links for website, with description*/
+#links {
+  position: relative;
+  margin: auto;
+}
+
+.main-links {
+  width: 100%;
+  margin: 40px auto 70px auto;
+  border: 2px solid transparent;
+  display: flex;
+  
+  
+}
+
+.links-img {
+  position: absolute;
+  width: 32.5%;
+  height: 400px;
+  opacity: 0.4;
+  display: block;
+  
+}
+
+.buying {
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 10px 0px rgb(60, 138, 255);
+  background-color: rgb(163, 203, 255);
+  height: 400px;
+  width: 35%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.selling {
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 10px 0px rgb(60, 138, 255);
+  background-color: rgb(163, 203, 255);
+  height: 400px;
+  width: 35%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact {
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 10px 0px rgb(60, 138, 255);
+  background-color: rgb(163, 203, 255);
+  height: 400px;
+  width: 35%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.web-link {
+  text-decoration: none;
+  color: black;
+}
+
+.web-link-hover {
+  padding-top: 110px;
+  padding-bottom: 100px;
+  transform: translateY(0px);
+  transition: 1s all ease;
+}
+
+.web-link-hover:hover {
+  transform: translateY(-100px);
+}
+
+.link-title {
+  font-size: 50px;
+  padding-bottom: 10px;
+  margin-top: -15px;
+  font-family: "Bungee", cursive;
+}
+
+#links .icon {
+  width: 70px;
+  height: 90px;
+  border-radius: 100%;
+  color: rgb(78, 78, 255);
+}
+
+.circle-border {
+  position: absolute;
+  top: 170px;
+  left: 41%;
+  height: 200px;
+  width: 180vw;
+  max-width: 85px;
+  max-height: 85px;
+  animation: circle 3s infinite;
+}
+
+.circle {
+  border: 3px solid black;
+  border-radius: 100%;
+  background-color: black;
+  width: 6%;
+  height: 5px;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.link-info {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  width: 90%;
+  font-size: 1.8vmin;
+  font-family: "DM Serif Display", serif;
+  line-height: auto;
+  padding: 250px 10px 200px 10px;
+}
+
+.link-info:hover {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 1s ease;
+}
+/* */
+
+/*The Lehigh Valley cities*/
+#cities {
+  background-color: #9bcdf3;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Castoro", serif;
+  letter-spacing: 12px;
+  box-shadow: 0px -4px 0px 0px;
+  padding-top: 50px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: "DM Serif Display", serif;
+}
+
+.lehigh-valley {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.city-name {
+  position: absolute;
+  font-size: 40px;
+  margin-left: 20px;
+  background-color: rgb(170, 220, 247);
+}
+
+.city-img {
+  width: 430px;
+  height: 430px;
+  margin: 5px;
+  box-shadow: 0px 0px 20px 0px rgb(60, 138, 255);
+}
+
+.city-img:hover {
+  width: 440px;
+  height: 440px;
+  transition: 1s ease;
+}
+/* */
+
+/*Realtor headshot and info about realtor*/
+#meet-the-team {
+  background-color: rgb(142, 184, 253);
+  position: relative;
+}
+
+.neighborhood-pic {
+  position: absolute;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
+h4 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  font-family: "Castoro", serif;
+  letter-spacing: 12px;
+  box-shadow: 0px -4px 0px 0px;
+}
+
+.employees {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.realtor-name {
+  font-size: 35px;
+  font-family: "DM Serif Display", serif;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.realtor {
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0px rgb(144, 144, 255);
+  width: 28%;
+  margin: 0px auto 30px auto;
+  padding: 20px;
+  background-color: rgb(163, 203, 255);
+}
+
+.realtor-headshot {
+  position: absolute;
+  width: 60%;
+  left: 0;
+  right: 0;
+  height: 350px;
+  display: block;
+  margin: auto;
+}
+
+.realtor-headshot-hover {
+  position: relative;
+  opacity: 0;
+  width: 60%;
+  height: 350px;
+  transition: 1s ease-out;
+
+  padding-bottom: 0px;
+  overflow: auto;
+}
+
+.realtor-headshot-hover:hover {
+  opacity: 1;
+  transition: 1s ease-in;
+  width: 70%;
+  height: 350px;
+}
+
+.realtor-info {
+  font-size: 18px;
+  line-height: 25px;
+}
+/* */
+
+/*Footer */
+#footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(170, 220, 247);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  width: 100%;
+}
+
+.footer-info {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-footer {
+  margin-left: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-catagories {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-options {
+  line-height: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.contact-footer {
+  margin: 0px 0px 0px 50px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.footer-pic {
+  width: 30%;
+  height: 30%;
+  margin-top: 10px;
+  margin-left: 50px;
+  padding-bottom: 20px;
+}
+footer .media-icons {
+  display: block;
+  margin-left: auto;
+}
+
+footer .meida-icon {
+  color: black;
+  width: 10%;
+  height: 5vh;
+}
+
+footer .icon:visited {
+  color: rgb(60, 138, 255);
+}
+
+.isaias {
+  position: absolute;
+  display: block;
+  margin: auto;
+  bottom: 0;
+}
+
+/* */
+
+/*Media Queries */
+@media screen and (max-width: 1501px) {
+  .link-info {
+    font-size: 1.8vmin;
+  }
+
+  .circle-border {
+    top: 170px;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .circle-border {
+    top: 170px;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #links {
+    margin-top: -20px;
+  }
+
+  .circle-border {
+    top: 170px;
+    left: 38%;
+  }
+  .footer-pic {
+    width: 50%;
+    height: 30%;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  nav .title {
+    font-size: 35px;
+  }
+
+  nav .drop-option {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  nav .drop-option:hover {
+    padding: 8px;
+  }
+
+  #links {
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav .navbar-links {
+    margin-top: 70px;
+  }
+
+  nav .navbar-selection {
+    font-size: 18px;
+  }
+
+  h1 {
+    top: 200px;
+  }
+
+  .message {
+    top: 300px;
+  }
+
+  .submit {
+    font-size: 14px;
+    height: 45px;
+  }
+
+  #links {
+    margin-top: -90px;
+  }
+
+  .link-info {
+    font-size: 1.9vw;
+  }
+
+  .realtor-headshot {
+    width: 85%;
+    height: 350px;
+  }
+
+  .realtor-headshot-hover {
+    width: 60%;
+    height: 350px;
+  }
+
+  .realtor-headshot-hover:hover {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav .title {
+    position: absolute;
+  }
+
+  nav .navbar-links {
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  #links {
+    margin-top: -100px;
+  }
+
+  .link-info {
+    font-size: 2.1vw;
+  }
+
+  .circle-border {
+    top: 170px;
+    left: 35%;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .city-name {
+    font-size: 30px;
+  }
+
+  .city-img {
+    width: 330px;
+    height: 330px;
+  }
+
+  .city-img:hover {
+    width: 340px;
+    height: 340px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .submit {
+    font-size: 12px;
+  }
+
+  .link-title {
+    font-size: 40px;
+  }
+
+  .circle-border {
+    top: 155px;
+    left: 34%;
+  }
+
+  h4 {
+    font-size: 55px;
+  }
+
+  .employees {
+    flex-direction: column;
+  }
+
+  .realtor {
+    width: 70%;
+  }
+
+  .realtor-name {
+    font-size: 35px;
+    font-family: "DM Serif Display", serif;
+    margin-bottom: 20px;
+  }
+
+  .realtor-headshot {
+    position: absolute;
+
+    width: 55%;
+    height: 350px;
+  }
+
+  .realtor-headshot-hover {
+    width: 60%;
+    height: 350px;
+  }
+  .realtor-headshot-hover:hover {
+    width: 70%;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav .drop-option {
+    font-size: 14px;
+    padding: 2px;
+  }
+
+  nav .drop-option:hover {
+    padding: 3px;
+  }
+
+  .message {
+    top: 270px;
+    margin-left: 18%;
+  }
+
+  .send-message {
+    height: 30px;
+  }
+
+  .submit {
+    width: 15%;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .main-links {
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    margin-left: 95px;
+  }
+
+  #links {
+    margin-top: -100px;
+  }
+
+  .links-img {
+    width: 70%;
+  }
+
+  .link-title {
+    font-size: 40px;
+  }
+
+  .link-info {
+    padding: 250px 10px 200px 20px;
+
+    font-size: 3.1vw;
+  }
+
+  .circle-border {
+    top: 155px;
+    left: 41%;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .city-name {
+    font-size: 30px;
+  }
+
+  .city-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .city-img:hover {
+    width: 210px;
+    height: 210px;
+  }
+
+  .contact-footer {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .footer-pic {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav .title {
+    font-size: 25px;
+  }
+
+  nav .navbar-links {
+    margin-top: 75px;
+    margin-right: 30px;
+  }
+
+  nav .navbar-selection {
+    font-size: 15px;
+  }
+
+  .send-message {
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .main-links {
+    margin-left: 66px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav .navbar-links {
+    margin-right: 20px;
+  }
+
+  nav .drop-option {
+    font-size: 12px;
+  }
+
+  #company-video {
+    position: relative;
+    display: block;
+    z-index: -1;
+    width: 180%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  h1 {
+    top: 250px;
+  }
+
+  .message {
+    top: 300px;
+    margin-left: 17%;
+  }
+
+  .send-message {
+    height: 20px;
+  }
+
+  .submit {
+    width: 16%;
+    height: 23px;
+    font-size: 10px;
+  }
+
+  .main-links {
+    margin-left: 66px;
+  }
+
+  .link-info {
+    font-size: 4.1vw;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .city-img {
+    width: 400px;
+    height: 300px;
+  }
+
+  .city-img:hover {
+    width: 400px;
+    height: 300px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  .realtor-headshot {
+    width: 75%;
+  }
+
+  .realtor-headshot-hover {
+    width: 85%;
+  }
+  .realtor-headshot-hover:hover {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav .title {
+    font-size: 22px;
+  }
+
+  nav .navbar-selection {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+
+  nav .navbar-links {
+    float: right;
+    margin-right: 10px;
+  }
+
+  nav .drop-option {
+    font-size: 10px;
+    padding: 2px;
+    height: 15px;
+  }
+
+  nav .drop-option:hover {
+    padding: 3px;
+    height: 18px;
+  }
+
+  .main-links {
+    width: 250%;
+    margin-left: 25px;
+    margin-bottom: 30px;
+  }
+
+  .links-img {
+    width: 88%;
+  }
+
+  .link-title {
+    font-size: 40px;
+  }
+
+  .link-info {
+    opacity: 1;
+    font-size: 4.5vw;
+
+    padding: 150px 10px 200px 10px;
+  }
+
+  .web-link-hover {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    transform: translateY(0px);
+  }
+
+  .web-link-hover:hover {
+    padding-top: 10px;
+
+    transform: translateY(0px);
+  }
+
+  #links .icon {
+    width: 50px;
+    height: 90px;
+    border-radius: 100%;
+  }
+
+  .circle-border {
+    top: 82px;
+    left: 39%;
+    height: 50px;
+    width: 180vw;
+  }
+
+  .city-img {
+    width: 350px;
+    height: 300px;
+  }
+
+  .city-img:hover {
+    width: 350px;
+    height: 300px;
+  }
+
+  .city-name {
+    font-size: 25px;
+  }
+
+  .employees {
+    flex-direction: column;
+  }
+
+  .realtor-headshot {
+    width: 85%;
+  }
+
+  .realtor-headshot-hover {
+    width: 98%;
+  }
+  .realtor-headshot-hover:hover {
+    width: 98%;
+  }
+
+  .realtor-info {
+    font-size: 17px;
+  }
+
+  .contact-footer {
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+  }
+
+  footer .media-icons {
+    display: block;
+    margin: auto;
+  }
+
+  .footer-info {
+    flex-direction: column;
+  }
+
+  .nav-footer {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+}
+/* */
+
+@media screen and (max-width: 400px) {
+  nav .navbar-selection {
+    font-size: 14px;
+  }
+
+  nav .title {
+    font-size: 18px;
+  }
+
+  h1 {
+    top: 150px;
+  }
+
+  .message {
+    top: 190px;
+    margin-left: 16%;
+  }
+
+  .send-message {
+    height: 15px;
+    font-size: 11px;
+  }
+
+  .submit {
+    width: 17%;
+    height: 17px;
+    font-size: 10px;
+  }
+
+  .main-links {
+    width: 250%;
+    margin-left: 19px;
+    margin-bottom: 30px;
+    height: 700px;
+  }
+
+  .links-img {
+    position: absolute;
+    width: 88%;
+    height: 230px;
+  }
+
+  .link-title {
+    font-size: 30px;
+    padding-bottom: 0px;
+  }
+
+  #links .icon {
+    width: 30px;
+    height: 90px;
+  }
+
+  .link-info {
+    font-size: 3.1vw;
+    padding: 120px 10px 200px 15px;
+  }
+
+  .circle-border {
+    top: 79px;
+    left: 41.5%;
+    height: 10px;
+    width: 15vw;
+  }
+
+  .circle {
+    border: 3px solid black;
+    border-radius: 100%;
+    background-color: black;
+    width: 3%;
+    height: 0.2vh;
+  }
+
+  .city-img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .city-img:hover {
+    width: 300px;
+    height: 200px;
+  }
+}
