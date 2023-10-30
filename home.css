@@ -576,6 +576,11 @@ footer .icon:visited {
     padding: 8px;
   }
 
+  h1 {
+    width: 50%;
+  }
+
+
   #links {
     margin-top: -60px;
   }
@@ -592,6 +597,7 @@ footer .icon:visited {
 
   h1 {
     top: 200px;
+    width: 60%;
   }
 
   .message {
@@ -682,6 +688,10 @@ footer .icon:visited {
 }
 
 @media screen and (max-width: 800px) {
+  h1 {
+    font-size: 6vmin;
+  }
+
   .submit {
     font-size: 12px;
   }
