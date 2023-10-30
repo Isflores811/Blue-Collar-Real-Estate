@@ -127,7 +127,7 @@ h1 {
   right: 0;
   margin: auto;
   padding: auto;
-  width: 70%;
+  width: 50%;
   text-align: center;
   box-shadow: 0px 0px 10px 0px;
   animation: fadeIn 3s ease-in;
@@ -640,6 +640,11 @@ footer .icon:visited {
     overflow: hidden;
   }
 
+  h1 {
+    font-size: 6vmin;
+    width: 65%;
+  }
+
   #links {
     margin-top: -100px;
   }
@@ -1054,11 +1059,11 @@ footer .icon:visited {
   }
 
   h1 {
-    top: 150px;
+    top: 200px;
   }
 
   .message {
-    top: 190px;
+    top: 250px;
     margin-left: 16%;
   }
 
