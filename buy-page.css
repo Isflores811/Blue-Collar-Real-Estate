@@ -271,14 +271,6 @@ button:focus {
   background-color: #7bc0f4;
 }
 
-.fixer-background {
-  position: absolute;
-  width: 99%;
-  height: 200%;
-  z-index: 1;
-  opacity: 0.1;
-}
-
 .fixer-upper-intro {
   display: flex;
   flex-direction: row;
@@ -306,7 +298,6 @@ button:focus {
   margin-left: 27px;
 
   z-index: 2;
-  border: 2px solid black;
 }
 
 @keyframes fixer {
@@ -329,7 +320,6 @@ button:focus {
   margin-left: 27px;
 
   z-index: 2;
-  border: 2px solid black;
 }
 
 @keyframes fixer2 {
