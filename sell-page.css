@@ -1,0 +1,1012 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Castoro&family=DM+Serif+Display&family=Ledger&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+/*Navbar Section*/
+
+nav {
+  position: fixed;
+  z-index: 10;
+  border: 1px solid transparent;
+  background-color: rgb(170, 220, 247);
+  height: 100px;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+nav img {
+  width: 150px;
+  float: left;
+}
+
+nav .company {
+  float: left;
+}
+
+nav .title {
+  position: relative;
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  top: 20px;
+  font-family: "Castoro", serif;
+}
+
+nav .navbar-links {
+  float: right;
+  margin-right: 50px;
+  margin-top: 60px;
+}
+
+nav .navbar-selection {
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+}
+
+nav .drop-option {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  height: 25px;
+  text-align: center;
+  font-family: "Ledger", serif;
+}
+
+nav .drop-option:hover {
+  transition: 0.5s;
+  color: blue;
+  padding: 15px;
+}
+
+nav .dropdown {
+  padding-top: 0px;
+  background-color: rgb(204, 226, 255);
+  box-shadow: 0px 0px 10px -2px rgb(0, 0, 215);
+}
+
+nav .navbar-links .dropdown {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+nav .navbar-links:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s all;
+  transform: translateY(0px);
+}
+
+/**/
+
+main {
+  background-color: rgb(224, 237, 251);
+}
+
+/*Title and title image*/
+
+.neighborhood-pic {
+  position: relative;
+  margin-top: 90px;
+  width: 100%;
+  height: 350px;
+  background-color: black;
+}
+
+.selling-title {
+  position: absolute;
+  font-size: 3.8vw;
+  font-weight: bold;
+  letter-spacing: 15px;
+  top: 350px;
+  left: 5%;
+  color: white;
+  background-color: rgb(60, 138, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgb(68, 111, 251);
+  font-family: "DM Serif Display", serif;
+  padding-left: 10px;
+}
+/**/
+
+/*Opening statement for Selling section*/
+#ready-to-sell {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 15px;
+  background-color: rgb(141, 217, 250);
+}
+.sell-description {
+  font-size: 1.7vw;
+  width: 60%;
+  background-color: rgb(223, 251, 253);
+  margin-right: 50px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Ledger", serif;
+}
+
+#moving-out-pic {
+  width: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/**/
+
+/*Process of getting ready to buying a home*/
+
+#process {
+  position: relative;
+  display: flex;
+  margin-top: 50px;
+  border: 2px solid black;
+  background-color: #9bcdf3;
+  padding: 40px;
+}
+
+.preparing,
+.market,
+.payout {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(197, 238, 248);
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.process-img {
+  width: 60%;
+  margin: 26px auto;
+  z-index: 1;
+  box-shadow: 0px 0px 15px 0px;
+  border: 2px solid rgb(96, 125, 242);
+}
+
+.process-icon {
+  margin: -60px auto 20px auto;
+  width: 25%;
+  border-radius: 90%;
+  padding: 10px;
+  background-color: rgb(17, 177, 226);
+  z-index: 2;
+}
+
+.process-description {
+  font-family: "Ledger", serif;
+
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+
+.process-line {
+  position: absolute;
+  border: 8px solid rgb(8, 180, 254);
+  width: 70%;
+  height: 0;
+  margin-top: 9%;
+  left: 15%;
+  z-index: 1;
+  box-shadow: 20px 10px 15px 0px;
+}
+/**/
+
+/*Virtual Staging*/
+#virtual-staging {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  border: 2px solid blue;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(#444cf7 1px, transparent 2px),
+    linear-gradient(to right, #444cf7 1px, #9fccf9 1px);
+  background-size: 20px 20px;
+}
+
+.staging-pic1 {
+  position: absolute;
+  width: 50%;
+
+  opacity: 1;
+  margin-left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  border: 5px solid black;
+  animation: staging-fadein 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes staging-fadein {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.staging-pic2 {
+  width: 50%;
+
+  margin-top: auto;
+
+  margin-left: 30px;
+  margin-bottom: auto;
+
+  box-shadow: 0px 5px 10px 0px rgb(1, 1, 252);
+  border: 5px solid black;
+}
+
+.staging-info {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+
+h2 {
+  font-size: 3vw;
+  text-align: center;
+  background-color: white;
+  margin-left: 26%;
+  margin-right: 23%;
+  padding: 5px;
+  box-shadow: 0px 5px 10px 0px rgb(1, 1, 252);
+}
+
+.staging-description {
+  width: 90%;
+  font-size: 1.4vw;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  margin: auto;
+  border: 2px solid black;
+  box-shadow: 0px 5px 10px 0px rgb(1, 1, 252);
+  background-color: rgb(231, 236, 243);
+  padding: 10px;
+  font-family: "Ledger", serif;
+}
+/**/
+
+/*About house and personal information inputs*/
+#about-house {
+  position: relative;
+  width: 90%;
+  display: flex;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(151, 206, 251);
+  overflow: hidden;
+}
+.house-info {
+  width: 200%;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin: auto;
+  text-align: center;
+  font-size: 2.5vw;
+  letter-spacing: 5px;
+  margin-top: 1%;
+  font-family: "Castoro", serif;
+  font-weight: bold;
+  z-index: 4;
+}
+
+.client-info {
+  display: flex;
+  justify-content: center;
+}
+
+#about-house label {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  margin-bottom: 70px;
+  font-family: "DM Serif Display", serif;
+  z-index: 2;
+}
+
+#about-house input {
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+#about-house select {
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.seller-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-features {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 60px;
+}
+
+h4 {
+  font-size: 14px;
+  width: 230%;
+  margin-top: 3px;
+  margin-bottom: -5px;
+  font-style: italic;
+}
+
+#submit-img {
+  background-color: rgb(255, 255, 255);
+}
+
+#about-house button {
+  margin: auto;
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  background-color: #3751fb;
+  text-align: center;
+}
+
+.family-img {
+  width: 70%;
+  float: right;
+  margin-right: 0px;
+  box-shadow: 0px 5px 10px 0px rgb(1, 1, 252);
+  border-radius: 10px;
+}
+
+/**/
+
+/*Footer*/
+
+#footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(170, 220, 247);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  width: 100%;
+}
+
+.footer-info {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-footer {
+  margin-left: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-catagories {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-options {
+  line-height: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.contact-footer {
+  margin: 0px 0px 0px 50px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.footer-pic {
+  width: 30%;
+  height: 30%;
+  margin-top: 10px;
+  margin-left: 50px;
+  padding-bottom: 20px;
+}
+footer .media-icons {
+  display: block;
+  margin-left: auto;
+}
+
+footer .icon {
+  color: black;
+  width: 10%;
+  height: 5vh;
+}
+
+.icon:visited {
+  color: rgb(60, 138, 255);
+}
+
+.isaias {
+  position: absolute;
+  display: block;
+  margin: auto;
+  bottom: 0%;
+}
+
+/* */
+
+/* Media Queries*/
+
+@media screen and (max-width: 1200px) {
+  #about-house label {
+    margin-bottom: 50px;
+  }
+
+  .family-img {
+    width: 80%;
+    margin-right: 10px;
+  }
+
+  .footer-pic {
+    width: 50%;
+    height: 30%;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  nav .title {
+    font-size: 35px;
+  }
+
+  nav .drop-option {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  nav .drop-option:hover {
+    padding: 8px;
+  }
+
+  #about-house label {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav .navbar-links {
+    margin-top: 70px;
+  }
+
+  nav .navbar-selection {
+    font-size: 18px;
+  }
+
+  #process {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .preparing,
+  .market,
+  .payout {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .process-img {
+    width: 30%;
+    margin: 40px auto;
+  }
+
+  .process-icon {
+    width: 10%;
+    height: 100px;
+    margin: auto auto auto -30px;
+  }
+
+  .process-description {
+    width: 55%;
+    margin: 60px auto;
+    line-height: 25px;
+    font-size: 2.2vw;
+  }
+
+  .process-line {
+    width: 90%;
+    height: 0;
+    margin-top: 9%;
+    top: 45%;
+    left: -25%;
+    transform: rotate(90deg);
+  }
+
+  #virtual-staging {
+    flex-direction: column-reverse;
+  }
+
+  .staging-pic1 {
+    position: absolute;
+    width: 60%;
+    margin: auto auto 20px auto;
+
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .staging-pic2 {
+    width: 60%;
+    margin: auto auto 20px auto;
+  }
+
+  .staging-info {
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  h2 {
+    width: 30%;
+    font-size: 4vw;
+    text-align: center;
+    background-color: white;
+    margin: 20px auto 20px auto;
+    padding: 5px;
+  }
+
+  .staging-description {
+    width: 80%;
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    margin: auto auto 20px auto;
+  }
+
+  .house-info {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    background-color: #9bcdf3;
+    border-radius: 20px;
+    z-index: 2;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 3.5vw;
+    margin-bottom: 10px;
+  }
+
+  .client-info {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-house label {
+    margin-bottom: 45px;
+  }
+
+  .family-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav .title {
+    position: absolute;
+  }
+
+  nav .navbar-links {
+    margin-top: 70px;
+    text-align: center;
+  }
+  main {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #ready-to-sell {
+    overflow: hidden;
+  }
+
+  #process {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 2px solid;
+    padding: 40px;
+  }
+
+  .preparing,
+  .market,
+  .payout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .process-img {
+    width: 60%;
+    margin: 10px auto;
+    z-index: 1;
+  }
+
+  .process-icon {
+    width: 15%;
+    height: auto;
+    margin: -60px auto 20px auto;
+  }
+
+  .process-description {
+    width: 90%;
+    font-size: 2.5vw;
+    margin: 20px auto;
+  }
+
+  .process-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav .drop-option {
+    font-size: 14px;
+    padding: 2px;
+  }
+
+  nav .drop-option:hover {
+    padding: 3px;
+  }
+
+  .neighborhood-pic {
+    width: 150%;
+    height: 250px;
+  }
+
+  .selling-title {
+    font-size: 4.5vw;
+    top: 280px;
+  }
+
+  .sell-description {
+    font-size: 3vw;
+    width: 90%;
+    margin: auto;
+
+    z-index: 1;
+  }
+
+  #moving-out-pic {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0%;
+    bottom: 0%;
+    z-index: 0;
+  }
+
+  h2 {
+    width: 35%;
+    font-size: 5vw;
+  }
+
+  .staging-description {
+    width: 90%;
+    font-size: 2.4vw;
+  }
+
+  .staging-pic1 {
+    position: absolute;
+    width: 80%;
+    margin: auto auto 20px auto;
+
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .staging-pic2 {
+    width: 80%;
+    margin: auto auto 20px auto;
+  }
+
+  h3 {
+    margin: auto auto 20px auto;
+    text-align: center;
+    font-size: 4.5vw;
+  }
+
+  .client-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #about-house label {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .seller-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-features {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 0px;
+  }
+
+  #about-house input {
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  #about-house select {
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .family-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 150%;
+    float: none;
+  }
+
+  .contact-footer {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .footer-pic {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav .title {
+    font-size: 25px;
+  }
+
+  nav .navbar-links {
+    margin-top: 75px;
+    margin-right: 30px;
+  }
+
+  nav .navbar-selection {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav .navbar-links {
+    margin-right: 20px;
+  }
+
+  nav .drop-option {
+    font-size: 12px;
+  }
+
+  .neighborhood-pic {
+    width: 150%;
+    height: 180px;
+  }
+
+  .selling-title {
+    font-size: 4.5vw;
+    top: 230px;
+    border-radius: 5px;
+    letter-spacing: 10px;
+  }
+
+  .process-img {
+    width: 80%;
+  }
+
+  .process-icon {
+    margin: -60px auto 0px auto;
+    width: 25%;
+  }
+
+  .process-description {
+    width: 100%;
+    font-size: 3vw;
+    line-height: 20px;
+  }
+
+  h3 {
+    font-size: 4.2vw;
+  }
+
+  #about-house label {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  #about-house input {
+    width: 250px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  #about-house select {
+    width: 250px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .family-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 180%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav .title {
+    font-size: 20px;
+  }
+
+  nav .navbar-selection {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+
+  nav .navbar-links {
+    float: right;
+    margin-right: 10px;
+  }
+
+  nav .drop-option {
+    font-size: 10px;
+    padding: 2px;
+    height: 15px;
+  }
+
+  nav .drop-option:hover {
+    padding: 3px;
+    height: 18px;
+  }
+
+  .contact-footer {
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+  }
+
+  .footer-pic {
+    margin-left: 0px;
+  }
+
+  footer .media-icons {
+    display: block;
+    margin: auto;
+  }
+
+  .footer-info {
+    flex-direction: column;
+  }
+
+  .nav-footer {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .neighborhood-pic {
+    width: 150%;
+    height: 180px;
+  }
+
+  .selling-title {
+    font-size: 5vw;
+    top: 230px;
+    border-radius: 5px;
+    letter-spacing: 10px;
+  }
+  h2 {
+    width: 40%;
+    font-size: 5.5vw;
+  }
+
+  .staging-description {
+    width: 90%;
+    font-size: 2.4vw;
+    line-height: 15px;
+  }
+
+  h3 {
+    font-size: 5.5vw;
+  }
+
+  #about-house input {
+    width: 250px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  #about-house select {
+    width: 250px;
+    height: 25px;
+    font-size: 12px;
+  }
+}
+/* */
