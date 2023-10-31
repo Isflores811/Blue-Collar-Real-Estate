@@ -671,15 +671,7 @@ footer .icon:visited {
     font-size: 30px;
   }
 
-  .city-img {
-    width: 330px;
-    height: 330px;
-  }
-
-  .city-img:hover {
-    width: 340px;
-    height: 340px;
-  }
+  
 
   h4 {
     font-size: 40px;
