@@ -671,7 +671,15 @@ footer .icon:visited {
     font-size: 30px;
   }
 
-  
+  .city-img {
+    width: 330px;
+    height: 330px;
+  }
+
+  .city-img:hover {
+    width: 340px;
+    height: 340px;
+  }
 
   h4 {
     font-size: 40px;
@@ -903,21 +911,23 @@ footer .icon:visited {
     font-size: 16px;
   }
 
-   .city-name {
+  .city-name {
     position: relative;
     display: inline-block;
     margin-top: 20px;
     font-size: 40px;
-    margin-left: 0px;
+    margin-left: 15px;
   }
 
   .city-img {
+    display: block;
+    margin: auto;
     width: 400px;
     height: 300px;
   }
 
   .city-img:hover {
-    width: 400px;
+    width: 450px;
     height: 300px;
   }
 
@@ -1010,15 +1020,6 @@ footer .icon:visited {
     width: 180vw;
   }
 
-  .city-img {
-    width: 400px;
-    height: 350px;
-  }
-
-  .city-img:hover {
-    width: 400px;
-    height: 350px;
-  }
 
   .city-name {
     font-size: 25px;
@@ -1136,13 +1137,10 @@ footer .icon:visited {
     height: 0.2vh;
   }
 
-  .city-img {
-    width: 300px;
-    height: 200px;
-  }
-
-  .city-img:hover {
-    width: 300px;
-    height: 200px;
+  .city-name {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 30px;
   }
 }
