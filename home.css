@@ -799,17 +799,23 @@ footer .icon:visited {
   }
 
   .city-name {
-    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 40px;
+    margin-top: 30px;
   }
 
   .city-img {
-    width: 200px;
-    height: 200px;
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 400px;
   }
 
   .city-img:hover {
-    width: 210px;
-    height: 210px;
+    width: 530px;
+    height: 430px;
   }
 
   .contact-footer {
