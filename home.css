@@ -903,6 +903,14 @@ footer .icon:visited {
     font-size: 16px;
   }
 
+   .city-name {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-left: 0px;
+  }
+
   .city-img {
     width: 400px;
     height: 300px;
