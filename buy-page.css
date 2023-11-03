@@ -149,10 +149,10 @@ main {
   background-color: #9bcdf3;
 }
 
-#homes,
-#lots,
-#commercial-listings,
-#fixer-upper-listings {
+.homes,
+.lots,
+.commercial-listings,
+.fixer-upper-listings {
   position: relative;
   width: 70%;
   display: flex;
@@ -166,7 +166,7 @@ h1 {
   font-size: 60px;
   letter-spacing: 12px;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 100px;
   margin-top: 10px;
 }
 
