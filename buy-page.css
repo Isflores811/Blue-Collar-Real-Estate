@@ -297,7 +297,7 @@ button:focus {
   animation-iteration-count: infinite;
   opacity: 1;
   margin-left: 27px;
-  border: 5px solid black;
+  border: 2px solid black;
   z-index: 2;
 }
 
@@ -319,6 +319,7 @@ button:focus {
   animation-iteration-count: infinite;
   opacity: 0;
   margin-left: 27px;
+  border: 5px solid black;
 
   z-index: 2;
 }
