@@ -9,7 +9,7 @@ html {
 
 nav {
   position: fixed;
-  z-index: 100;
+  z-index: 10;
   border: 1px solid transparent;
   background-color: rgb(170, 220, 247);
   height: 100px;
