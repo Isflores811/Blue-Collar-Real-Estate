@@ -297,10 +297,13 @@ h1 {
   top: 0px;
   opacity: 0;
   width: 90%;
-  font-size: 1.8vmin;
+  font-size: 2.2vmin;
   font-family: "DM Serif Display", serif;
   line-height: auto;
-  padding: 250px 10px 200px 10px;
+  padding: 250px 0px 200px 0px;
+   margin: auto;
+   left: 0;
+   right: 0;
 }
 
 .link-info:hover {
@@ -525,17 +528,6 @@ footer .icon:visited {
 /* */
 
 /*Media Queries */
-@media screen and (max-width: 1501px) {
-  .link-info {
-    font-size: 1.8vmin;
-  }
-
-  .circle-border {
-    top: 170px;
-    left: 40%;
-  }
-}
-
 @media screen and (max-width: 1400px) {
   .circle-border {
     top: 170px;
@@ -782,7 +774,7 @@ footer .icon:visited {
   }
 
   .link-info {
-    padding: 250px 10px 200px 20px;
+    padding: 250px 0px 200px 0px;
 
     font-size: 3.1vw;
   }
@@ -998,8 +990,7 @@ footer .icon:visited {
   .link-info {
     opacity: 1;
     font-size: 4.5vw;
-
-    padding: 150px 10px 200px 20px;
+    padding: 150px 0px 200px 0px;
   }
 
   .web-link-hover {
@@ -1115,7 +1106,7 @@ footer .icon:visited {
 
   .link-info {
     font-size: 3.1vw;
-    padding: 120px 10px 200px 15px;
+    padding: 120px 0px 200px 0px;
   }
 
   .circle-border {
